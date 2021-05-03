@@ -1,3 +1,11 @@
+/*!
+\file Magazzino.cpp
+\brief implementazione classe Magazzino
+\author Lorenzo
+\version 1.0
+\date 01/01/2000
+*/
+
 #include "pch.h"
 #include "Magazzino.h"
 
