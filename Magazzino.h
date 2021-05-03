@@ -55,17 +55,17 @@ public:
 	/*!\fn ricercaMiglioreVelocita
 		\brief migliore velocita
 	 */
-	void ricercaMiglioreVelocita(void);
+	Computer ricercaMiglioreVelocita(void);
 
 	/*!\fn ricercaMiglioreDimensione
 		\brief migliore dimensione
 	 */
-	void ricercaMiglioreDimensione(void);
+	Computer ricercaMiglioreDimensione(void);
 
 	/*!\fn ricercaMiglioreDisco
 		\brief migliore disco
 	 */
-	void ricercaMiglioreDisco(void);
+	Computer ricercaMiglioreDisco(void);
 
 	/*!\fn stampa
 		\brief stampa dei pc
