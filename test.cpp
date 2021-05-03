@@ -27,4 +27,19 @@ class Test_programma_computer : public testing::Test
 	}
 };
 
+//test del costruttore della classe Computer(parametri giusti)
+TEST(Computer, costruttore_senza_parametri_giusti)
+{
+    Computer c;
+	
+    ASSERT_TRUE(c.getMarca() == "");
+    ASSERT_TRUE(c.getModello() == "");
+    ASSERT_TRUE(c.getVelocita() == 0);
+    ASSERT_TRUE(c.getRam() == 0);
+    ASSERT_TRUE(c.getDisco() == 0);
+    ASSERT_TRUE(c.getMonitor() == 0);
+    ASSERT_TRUE(c.getAnno() == 0);
+    ASSERT_TRUE(c.getCodice() == 0);
+}
+
 
