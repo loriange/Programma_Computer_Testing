@@ -70,7 +70,7 @@ bool Magazzino::ricercaCodice(int codice)
 	}
 }
 
-void Magazzino::ricercaMiglioreVelocita()
+Computer Magazzino::ricercaMiglioreVelocita()
 {
 	int max = 0, var = 0;
 	for (int i = 0; i < totale; i++)
@@ -81,19 +81,10 @@ void Magazzino::ricercaMiglioreVelocita()
 			var = i;
 		}
 	}
-	cout << "Il codice: " << pc[var].getCodice() << endl;
-	printf("La marca: %s\n", pc[var].getMarca().c_str());
-	printf("Il modello: %s\n", pc[var].getModello().c_str());
-	cout << "Velocita\' processore: " << pc[var].getVelocita() << endl;
-	cout << "Ram: " << pc[var].getRam() << endl;
-	cout << "Disco: " << pc[var].getDisco() << endl;
-	cout << "Monitor: " << pc[var].getMonitor() << endl;
-	cout << "L'anno: " << pc[var].getAnno() << endl;
+	return pc[var];
 }
 
-
-
-void Magazzino::ricercaMiglioreDimensione()
+Computer Magazzino::ricercaMiglioreDimensione()
 {
 	int max = 0, var = 0;
 	for (int i = 0; i < totale; i++)
@@ -104,17 +95,10 @@ void Magazzino::ricercaMiglioreDimensione()
 			var = i;
 		}
 	}
-	cout << "Il codice: " << pc[var].getCodice() << endl;
-	printf("La marca: %s\n", pc[var].getMarca().c_str());
-	printf("Il modello: %s\n", pc[var].getModello().c_str());
-	cout << "Velocita\' processore: " << pc[var].getVelocita() << endl;
-	cout << "Ram: " << pc[var].getRam() << endl;
-	cout << "Disco: " << pc[var].getDisco() << endl;
-	cout << "Monitor: " << pc[var].getMonitor() << endl;
-	cout << "L'anno: " << pc[var].getAnno() << endl;
+	return pc[var];
 }
 
-void Magazzino::ricercaMiglioreDisco()
+Computer Magazzino::ricercaMiglioreDisco()
 {
 	int max = 0, var = 0;
 	for (int i = 0; i < totale; i++)
@@ -125,14 +109,7 @@ void Magazzino::ricercaMiglioreDisco()
 			var = i;
 		}
 	}
-	cout << "Il codice: " << pc[var].getCodice() << endl;
-	printf("La marca: %s\n", pc[var].getMarca().c_str());
-	printf("Il modello: %s\n", pc[var].getModello().c_str());
-	cout << "Velocita\' processore: " << pc[var].getVelocita() << endl;
-	cout << "Ram: " << pc[var].getRam() << endl;
-	cout << "Disco: " << pc[var].getDisco() << endl;
-	cout << "Monitor: " << pc[var].getMonitor() << endl;
-	cout << "L'anno: " << pc[var].getAnno() << endl;
+	return pc[var];
 }
 
 int Magazzino::getTotale()
