@@ -85,18 +85,40 @@ int main()
         case 4:
         {
             cout << "Il pc con maggiore velocita del processore" << endl;
+            cout << "Il codice: " << gestione.ricercaMiglioreVelocita().getCodice() << endl;
+            printf("La marca: %s\n", gestione.ricercaMiglioreVelocita().getMarca().c_str());
+            printf("Il modello: %s\n", gestione.ricercaMiglioreVelocita().getModello().c_str());
+            cout << "Velocita\' processore: " << gestione.ricercaMiglioreVelocita().getVelocita() << endl;
+            cout << "Ram: " << gestione.ricercaMiglioreVelocita().getRam() << endl;
+            cout << "Disco: " << gestione.ricercaMiglioreVelocita().getDisco() << endl;
+            cout << "Monitor: " << gestione.ricercaMiglioreVelocita().getMonitor() << endl;
+            cout << "L'anno: " << gestione.ricercaMiglioreVelocita().getAnno() << endl;
 
-            gestione.ricercaMiglioreVelocita();
 
             cout << "" << endl;
+
             cout << "Il pc con maggiore dimensione ram" << endl;
+            cout << "Il codice: " << gestione.ricercaMiglioreDimensione().getCodice() << endl;
+            printf("La marca: %s\n", gestione.ricercaMiglioreDimensione().getMarca().c_str());
+            printf("Il modello: %s\n", gestione.ricercaMiglioreDimensione().getModello().c_str());
+            cout << "Velocita\' processore: " << gestione.ricercaMiglioreDimensione().getVelocita() << endl;
+            cout << "Ram: " << gestione.ricercaMiglioreDimensione().getRam() << endl;
+            cout << "Disco: " << gestione.ricercaMiglioreDimensione().getDisco() << endl;
+            cout << "Monitor: " << gestione.ricercaMiglioreDimensione().getMonitor() << endl;
+            cout << "L'anno: " << gestione.ricercaMiglioreDimensione().getAnno() << endl;
 
-            gestione.ricercaMiglioreDimensione();
 
             cout << "" << endl;
-            cout << "Il pc con maggiore dimensione del disco" << endl;
 
-            gestione.ricercaMiglioreDisco();
+            cout << "Il pc con maggiore dimensione del disco" << endl;
+            cout << "Il codice: " << gestione.ricercaMiglioreDisco().getCodice() << endl;
+            printf("La marca: %s\n", gestione.ricercaMiglioreDisco().getMarca().c_str());
+            printf("Il modello: %s\n", gestione.ricercaMiglioreDisco().getModello().c_str());
+            cout << "Velocita\' processore: " << gestione.ricercaMiglioreDisco().getVelocita() << endl;
+            cout << "Ram: " << gestione.ricercaMiglioreDisco().getRam() << endl;
+            cout << "Disco: " << gestione.ricercaMiglioreDisco().getDisco() << endl;
+            cout << "Monitor: " << gestione.ricercaMiglioreDisco().getMonitor() << endl;
+            cout << "L'anno: " << gestione.ricercaMiglioreDisco().getAnno() << endl;
 
             break;
         }
@@ -114,5 +136,4 @@ int main()
         }
         }
     } while (operazione != 6);
-    return 0;
 }
