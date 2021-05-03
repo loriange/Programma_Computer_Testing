@@ -1,0 +1,4 @@
+Doxygen version used: 1.9.1 (ef9b20ac7f8a8621fcfc299f8bd0b80422390f4b)
+error: tag OUTPUT_DIRECTORY: Output directory '.C:\Users\loren\OneDrive\Desktop\ProgComputer\ProgComputer\doxygen' does not exist and cannot be created
+Exiting...
+*** Doxygen has finished
