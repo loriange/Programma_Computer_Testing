@@ -1,0 +1,157 @@
+\hypertarget{class_magazzino}{}\doxysection{Magazzino Class Reference}
+\label{class_magazzino}\index{Magazzino@{Magazzino}}
+
+
+rappresenta l\textquotesingle{}insieme di computer  
+
+
+
+
+{\ttfamily \#include $<$Magazzino.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_magazzino_a37bffde449de9bfff667fc70dee06414}{Magazzino}} (void)
+\begin{DoxyCompactList}\small\item\em costruttore predefinito \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_magazzino_af5cd1aee2650963651b58e256c5d0dc5}{aggiungi}} (\mbox{\hyperlink{class_computer}{Computer}} pc, int codice)
+\begin{DoxyCompactList}\small\item\em aggiunge un pc \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_magazzino_aabf6f546edf243e91af6fe7c3c60616e}{elimina}} (int codice)
+\begin{DoxyCompactList}\small\item\em elimina un pc \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_magazzino_ae0a3b03978d1d2a6e3ec58328030defe}{ricerca\+Codice}} (int codice)
+\begin{DoxyCompactList}\small\item\em ricerca tramite il codice \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_computer}{Computer}} \mbox{\hyperlink{class_magazzino_aefa3663973574620339003f6149d3c49}{ricerca\+Migliore\+Velocita}} (void)
+\begin{DoxyCompactList}\small\item\em migliore velocita \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_computer}{Computer}} \mbox{\hyperlink{class_magazzino_a3a680737da5f1970445238285a067844}{ricerca\+Migliore\+Dimensione}} (void)
+\begin{DoxyCompactList}\small\item\em migliore dimensione \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_computer}{Computer}} \mbox{\hyperlink{class_magazzino_a8a74752656572875452fef20fc7ae709}{ricerca\+Migliore\+Disco}} (void)
+\begin{DoxyCompactList}\small\item\em migliore disco \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_magazzino_a2b1544f015b85c2f5ad488a9d078f1b0}{stampa}} ()
+\begin{DoxyCompactList}\small\item\em stampa dei pc \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_magazzino_adadecd1d67efa16ff520cc1616baf30e}{get\+Totale}} ()
+\begin{DoxyCompactList}\small\item\em ritorna il totale dei pc \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+rappresenta l\textquotesingle{}insieme di computer 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_magazzino_a37bffde449de9bfff667fc70dee06414}\label{class_magazzino_a37bffde449de9bfff667fc70dee06414}} 
+\index{Magazzino@{Magazzino}!Magazzino@{Magazzino}}
+\index{Magazzino@{Magazzino}!Magazzino@{Magazzino}}
+\doxysubsubsection{\texorpdfstring{Magazzino()}{Magazzino()}}
+{\footnotesize\ttfamily Magazzino\+::\+Magazzino (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+costruttore predefinito 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_magazzino_af5cd1aee2650963651b58e256c5d0dc5}\label{class_magazzino_af5cd1aee2650963651b58e256c5d0dc5}} 
+\index{Magazzino@{Magazzino}!aggiungi@{aggiungi}}
+\index{aggiungi@{aggiungi}!Magazzino@{Magazzino}}
+\doxysubsubsection{\texorpdfstring{aggiungi()}{aggiungi()}}
+{\footnotesize\ttfamily Magazzino\+::aggiungi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_computer}{Computer}}}]{pc,  }\item[{int}]{codice }\end{DoxyParamCaption})}
+
+
+
+aggiunge un pc 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em codice} & return totale \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_magazzino_aabf6f546edf243e91af6fe7c3c60616e}\label{class_magazzino_aabf6f546edf243e91af6fe7c3c60616e}} 
+\index{Magazzino@{Magazzino}!elimina@{elimina}}
+\index{elimina@{elimina}!Magazzino@{Magazzino}}
+\doxysubsubsection{\texorpdfstring{elimina()}{elimina()}}
+{\footnotesize\ttfamily Magazzino\+::elimina (\begin{DoxyParamCaption}\item[{int}]{codice }\end{DoxyParamCaption})}
+
+
+
+elimina un pc 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em codice} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+totale 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_magazzino_adadecd1d67efa16ff520cc1616baf30e}\label{class_magazzino_adadecd1d67efa16ff520cc1616baf30e}} 
+\index{Magazzino@{Magazzino}!getTotale@{getTotale}}
+\index{getTotale@{getTotale}!Magazzino@{Magazzino}}
+\doxysubsubsection{\texorpdfstring{getTotale()}{getTotale()}}
+{\footnotesize\ttfamily Magazzino\+::get\+Totale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna il totale dei pc 
+
+\mbox{\Hypertarget{class_magazzino_ae0a3b03978d1d2a6e3ec58328030defe}\label{class_magazzino_ae0a3b03978d1d2a6e3ec58328030defe}} 
+\index{Magazzino@{Magazzino}!ricercaCodice@{ricercaCodice}}
+\index{ricercaCodice@{ricercaCodice}!Magazzino@{Magazzino}}
+\doxysubsubsection{\texorpdfstring{ricercaCodice()}{ricercaCodice()}}
+{\footnotesize\ttfamily Magazzino\+::ricerca\+Codice (\begin{DoxyParamCaption}\item[{int}]{codice }\end{DoxyParamCaption})}
+
+
+
+ricerca tramite il codice 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em codice} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_magazzino_a3a680737da5f1970445238285a067844}\label{class_magazzino_a3a680737da5f1970445238285a067844}} 
+\index{Magazzino@{Magazzino}!ricercaMiglioreDimensione@{ricercaMiglioreDimensione}}
+\index{ricercaMiglioreDimensione@{ricercaMiglioreDimensione}!Magazzino@{Magazzino}}
+\doxysubsubsection{\texorpdfstring{ricercaMiglioreDimensione()}{ricercaMiglioreDimensione()}}
+{\footnotesize\ttfamily Magazzino\+::ricerca\+Migliore\+Dimensione (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+migliore dimensione 
+
+\mbox{\Hypertarget{class_magazzino_a8a74752656572875452fef20fc7ae709}\label{class_magazzino_a8a74752656572875452fef20fc7ae709}} 
+\index{Magazzino@{Magazzino}!ricercaMiglioreDisco@{ricercaMiglioreDisco}}
+\index{ricercaMiglioreDisco@{ricercaMiglioreDisco}!Magazzino@{Magazzino}}
+\doxysubsubsection{\texorpdfstring{ricercaMiglioreDisco()}{ricercaMiglioreDisco()}}
+{\footnotesize\ttfamily Magazzino\+::ricerca\+Migliore\+Disco (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+migliore disco 
+
+\mbox{\Hypertarget{class_magazzino_aefa3663973574620339003f6149d3c49}\label{class_magazzino_aefa3663973574620339003f6149d3c49}} 
+\index{Magazzino@{Magazzino}!ricercaMiglioreVelocita@{ricercaMiglioreVelocita}}
+\index{ricercaMiglioreVelocita@{ricercaMiglioreVelocita}!Magazzino@{Magazzino}}
+\doxysubsubsection{\texorpdfstring{ricercaMiglioreVelocita()}{ricercaMiglioreVelocita()}}
+{\footnotesize\ttfamily Magazzino\+::ricerca\+Migliore\+Velocita (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+migliore velocita 
+
+\mbox{\Hypertarget{class_magazzino_a2b1544f015b85c2f5ad488a9d078f1b0}\label{class_magazzino_a2b1544f015b85c2f5ad488a9d078f1b0}} 
+\index{Magazzino@{Magazzino}!stampa@{stampa}}
+\index{stampa@{stampa}!Magazzino@{Magazzino}}
+\doxysubsubsection{\texorpdfstring{stampa()}{stampa()}}
+{\footnotesize\ttfamily Magazzino\+::stampa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+stampa dei pc 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/loren/\+One\+Drive/\+Desktop/\+Test\+\_\+programma\+\_\+computer/\mbox{\hyperlink{_magazzino_8h}{Magazzino.\+h}}\item 
+C\+:/\+Users/loren/\+One\+Drive/\+Desktop/\+Test\+\_\+programma\+\_\+computer/\mbox{\hyperlink{_magazzino_8cpp}{Magazzino.\+cpp}}\end{DoxyCompactItemize}
