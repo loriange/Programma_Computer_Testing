@@ -1,3 +1,10 @@
+/*!
+\file test.cpp
+\brief implementazione dei test
+\author Lorenzo
+\version 1.0
+\date 01/01/2000
+*/
 #include "pch.h"
 #include "Computer.h"
 #include "Magazzino.h"
