@@ -202,3 +202,57 @@ TEST(Magazzino, elimina_pc)
 
     ASSERT_FALSE(m.elimina(5));
 }
+
+//test della funzione ricerca pc della classe Magazzino con maggiore velocita
+TEST(Magazzino, ricerca_pc_migliore_velocita)
+{
+	Magazzino m;
+
+	Computer c1("Asus", "VivoBook", 2, 8, 400, 50, 2016, 0);
+	Computer c2("Asus", "VivoBook", 3, 16, 1000, 60, 2019, 1);
+
+	ASSERT_TRUE(m.aggiungi(c1, 0));
+	ASSERT_TRUE(m.aggiungi(c2, 1));
+
+	ASSERT_TRUE(m.ricercaMiglioreVelocita().getVelocita() == c2.getVelocita());
+	ASSERT_FALSE(m.ricercaMiglioreVelocita().getVelocita() == c1.getVelocita());
+
+	ASSERT_LE(c1.getVelocita(), c2.getVelocita());
+	ASSERT_GE(c2.getVelocita(), c1.getVelocita());
+
+}
+
+//test della funzione ricerca pc della classe Magazzino con maggiore ram
+TEST(Magazzino, ricerca_pc_migliore_ram)
+{
+	Magazzino m;
+
+	Computer c1("Asus", "VivoBook", 2, 8, 400, 50, 2016, 0);
+	Computer c2("Asus", "VivoBook", 3, 16, 1000, 60, 2019, 1);
+
+	ASSERT_TRUE(m.aggiungi(c1, 0));
+	ASSERT_TRUE(m.aggiungi(c2, 1));
+
+	ASSERT_TRUE(m.ricercaMiglioreDimensione().getRam() == c2.getRam());
+	ASSERT_FALSE(m.ricercaMiglioreDimensione().getRam() == c1.getRam());
+	
+	ASSERT_LE(c1.getVelocita(), c2.getVelocita());
+	ASSERT_GE(c2.getVelocita(), c1.getVelocita());
+}
+
+//test della funzione ricerca pc della classe Magazzino con maggiore disco
+TEST(Magazzino, ricerca_pc_migliore_disco)
+{
+	Magazzino m;
+
+	Computer c1("Asus", "VivoBook", 2, 8, 400, 50, 2016, 0);
+	Computer c2("Asus", "VivoBook", 3, 16, 1000, 60, 2019, 1);
+
+	ASSERT_TRUE(m.aggiungi(c1, 0));
+	ASSERT_TRUE(m.aggiungi(c2, 1));
+
+	ASSERT_TRUE(m.ricercaMiglioreDisco().getDisco() == c2.getDisco());
+	ASSERT_FALSE(m.ricercaMiglioreDisco().getDisco() == c1.getDisco());
+	
+	ASSERT_LE(c1.getDisco(), c2.getDisco());
+
