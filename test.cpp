@@ -34,60 +34,6 @@ class Test_programma_computer : public testing::Test
 	}
 };
     
-//test del costruttore con parametri da input della classe Computer(parametri giusti)
-TEST(Computer, costruttore_con_parametri_giusti) 
-{
-    Computer c1("Asus", "VivoBook", 2, 8, 400, 50, 2016, 1);
-    ASSERT_TRUE(c1.getMarca() == "Asus");
-    ASSERT_TRUE(c1.getModello() == "VivoBook");
-    ASSERT_TRUE(c1.getVelocita() == 2);
-    ASSERT_TRUE(c1.getRam() == 8);
-    ASSERT_TRUE(c1.getDisco() == 400);
-    ASSERT_TRUE(c1.getMonitor() == 50);
-    ASSERT_TRUE(c1.getAnno() == 2016);
-    ASSERT_TRUE(c1.getCodice() == 1);
-}
-
-
-//test del costruttore con parametri da input della classe Computer(parametri sbagliati)
-TEST(Computer, costruttore_con_parametri_sbagliati)
-{
-    Computer c1("Asus", "VivoBook", 2, 8, 400, 50, 2016, 1);
-
-    ASSERT_FALSE(c1.getMarca() == "bo");
-    ASSERT_FALSE(c1.getModello() == "bo");
-    ASSERT_FALSE(c1.getVelocita() == 10);
-    ASSERT_FALSE(c1.getRam() == 10);
-    ASSERT_FALSE(c1.getDisco() == 10);
-    ASSERT_FALSE(c1.getMonitor() == 10);
-    ASSERT_FALSE(c1.getAnno() == 10);
-    ASSERT_FALSE(c1.getCodice() == 10);
-}
- 
-//test della funzione ricerca pc della classe Magazzino
-TEST(Magazzino, ricerca_pc)
-{
-    Magazzino m;
-
-    Computer c1("Asus", "VivoBook", 2, 8, 400, 50, 2016, 1);
-    Computer c2("Asus", "VivoBook", 3, 16, 1000, 60, 2019, 2);
-
-    ASSERT_TRUE(m.aggiungi(c1, 1));
-    ASSERT_TRUE(m.aggiungi(c2, 2));
-
-    ASSERT_TRUE(m.ricercaCodice(1));
-
-    ASSERT_FALSE(m.ricercaCodice(5));
-    ASSERT_FALSE(m.ricercaCodice(9));
-}
- 
-
-
-
-
-
-
-
 //test del costruttore della classe Computer(parametri giusti)
 TEST(Computer, costruttore_senza_parametri_giusti)
 {
@@ -118,6 +64,35 @@ TEST(Computer, costruttore_senza_parametri_sbagliati)
     ASSERT_FALSE(c.getCodice() == 10);
 }
 
+//test del costruttore con parametri da input della classe Computer(parametri giusti)
+TEST(Computer, costruttore_con_parametri_giusti) 
+{
+    Computer c1("Asus", "VivoBook", 2, 8, 400, 50, 2016, 1);
+    ASSERT_TRUE(c1.getMarca() == "Asus");
+    ASSERT_TRUE(c1.getModello() == "VivoBook");
+    ASSERT_TRUE(c1.getVelocita() == 2);
+    ASSERT_TRUE(c1.getRam() == 8);
+    ASSERT_TRUE(c1.getDisco() == 400);
+    ASSERT_TRUE(c1.getMonitor() == 50);
+    ASSERT_TRUE(c1.getAnno() == 2016);
+    ASSERT_TRUE(c1.getCodice() == 1);
+}
+
+//test del costruttore con parametri da input della classe Computer(parametri sbagliati)
+TEST(Computer, costruttore_con_parametri_sbagliati)
+{
+    Computer c1("Asus", "VivoBook", 2, 8, 400, 50, 2016, 1);
+
+    ASSERT_FALSE(c1.getMarca() == "bo");
+    ASSERT_FALSE(c1.getModello() == "bo");
+    ASSERT_FALSE(c1.getVelocita() == 10);
+    ASSERT_FALSE(c1.getRam() == 10);
+    ASSERT_FALSE(c1.getDisco() == 10);
+    ASSERT_FALSE(c1.getMonitor() == 10);
+    ASSERT_FALSE(c1.getAnno() == 10);
+    ASSERT_FALSE(c1.getCodice() == 10);
+}
+ 
 //test costruttore della classe Magazzino 
 TEST(Magazzino, costruttore_senza_parametri)
 {
@@ -127,7 +102,23 @@ TEST(Magazzino, costruttore_senza_parametri)
     ASSERT_FALSE(m.getTotale() == 10);
 }
 
+//test della funzione ricerca pc della classe Magazzino
+TEST(Magazzino, ricerca_pc)
+{
+    Magazzino m;
 
+    Computer c1("Asus", "VivoBook", 2, 8, 400, 50, 2016, 1);
+    Computer c2("Asus", "VivoBook", 3, 16, 1000, 60, 2019, 2);
+
+    ASSERT_TRUE(m.aggiungi(c1, 1));
+    ASSERT_TRUE(m.aggiungi(c2, 2));
+
+    ASSERT_TRUE(m.ricercaCodice(1));
+
+    ASSERT_FALSE(m.ricercaCodice(5));
+    ASSERT_FALSE(m.ricercaCodice(9));
+}
+ 
 //test della funzione aggiungi pc della classe Magazzino(con parametri giusti)
 TEST(Magazzino, aggiungi_pc_parametri_giusti)
 {
@@ -219,7 +210,6 @@ TEST(Magazzino, ricerca_pc_migliore_velocita)
 
 	ASSERT_LE(c1.getVelocita(), c2.getVelocita());
 	ASSERT_GE(c2.getVelocita(), c1.getVelocita());
-
 }
 
 //test della funzione ricerca pc della classe Magazzino con maggiore ram
@@ -255,4 +245,4 @@ TEST(Magazzino, ricerca_pc_migliore_disco)
 	ASSERT_FALSE(m.ricercaMiglioreDisco().getDisco() == c1.getDisco());
 	
 	ASSERT_LE(c1.getDisco(), c2.getDisco());
-
+}
